@@ -91,82 +91,91 @@
         <div class="container">
             <div class="row">
                 <section class="page col-sm-9">
-                    <h2 class="page-title">Register</h2>
+                    <h2 class="page-title">Become an ambassador</h2>
                     <div class="entry">
                         <form>
                             <div class="row">
-                              <h4>Account</h4>
+                              <h4>Account Details</h4>
+
                               <div class="input-group input-group-icon" style="width: 65%;">
                                 <input type="text" placeholder="Full Name" name="name" required="required" />
                                 <div class="input-icon"><i class="fa fa-user"></i></div>
                               </div>
+
                               <div class="input-group input-group-icon" style="width: 65%;">
                                 <input type="email" placeholder="Email Adress" name="email" required />
                                 <div class="input-icon"><i class="fa fa-envelope"></i></div>
                               </div>
+
                               <div class="input-group input-group-icon" style="width: 65%;">
                                 <input type="text" placeholder="Phone Number" name="phone" required />
                                 <div class="input-icon"><i class="fa fa-tel"></i></div>
                               </div>
-
-                              <div class="input-group input-group-icon" style="width: 65%;">
-                                <input list="county" name="county" placeholder="County" />
-                                <datalist id="county">
-                                    <option value="Baringo"></option>
-                                    <option value="Bomet"></option>
-                                    <option value="Busia"></option>
-                                    <option value="Elgeyo-Marakwet"></option>
-                                    <option value="Embu"></option>
-                                    <option value="Garisa"></option>
-                                    <option value="Homa Bay"></option>
-                                    <option value="Isiolo"></option>
-                                    <option value="Kajiado"></option>
-                                    <option value="Kakamega"></option>
-                                    <option value="Kericho"></option>
-                                    <option value="Kiambu"></option>
-                                    <option value="Kilifi"></option>
-                                    <option value="Kirinyaga"></option>
-                                    <option value="Kisii"></option>
-                                    <option value="Kisumu"></option>
-                                    <option value="Kitui"></option>
-                                    <option value="Kwale"></option>
-                                    <option value="Laikipia"></option>
-                                    <option value="Lamu"></option>
-                                    <option value="Machakos"></option>
-                                    <option value="Makueni"></option>
-                                    <option value="Mandera"></option>
-                                    <option value="Marsabit"></option>
-                                    <option value="Meru"></option>
-                                    <option value="Migori"></option>
-                                    <option value="Mombasa"></option>
-                                    <option value="Murang'a"></option>
-                                    <option value="Nairobi"></option>
-                                    <option value="Nakuru"></option>
-                                    <option value="Nandi"></option>
-                                    <option value="Narok"></option>
-                                    <option value="Nyamira"></option>
-                                    <option value="Nyandarua"></option>
-                                    <option value="Nyeri"></option>
-                                    <option value="Samburu"></option>
-                                    <option value="Siaya"></option>
-                                    <option value="Taita-Taveta"></option>
-                                    <option value="Tana River"></option>
-                                    <option value="Tharaka-Nithi"></option>
-                                    <option value="Trans Nzoia"></option>
-                                    <option value="Turkana"></option>
-                                    <option value="Uasin Gishu"></option>
-                                    <option value="Vihiga"></option>
-                                    <option value="Wajir"></option>
-                                    <option value="West Pokot"></option>
-                                </datalist>
-                                <div class="input-icon"><i class="fa fa-tel"></i></div>
-                              </div>
-
                             </div>
 
                             <div class="row">
+                                <h4>Personal Details</h4>
+
+                                <div class="input-group input-group-icon" style="width: 65%;">
+                                    <input type="text" placeholder="ID number" name="id-number" maxlength="8" required="required" />
+                                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                              </div>
+
+                                <div class="input-group input-group-icon" style="width: 65%;">
+                                    <input list="county" name="county" placeholder="County of residence" />
+                                        <datalist id="county">
+                                            <option value="Baringo"></option>
+                                            <option value="Bomet"></option>
+                                            <option value="Busia"></option>
+                                            <option value="Elgeyo-Marakwet"></option>
+                                            <option value="Embu"></option>
+                                            <option value="Garisa"></option>
+                                            <option value="Homa Bay"></option>
+                                            <option value="Isiolo"></option>
+                                            <option value="Kajiado"></option>
+                                            <option value="Kakamega"></option>
+                                            <option value="Kericho"></option>
+                                            <option value="Kiambu"></option>
+                                            <option value="Kilifi"></option>
+                                            <option value="Kirinyaga"></option>
+                                            <option value="Kisii"></option>
+                                            <option value="Kisumu"></option>
+                                            <option value="Kitui"></option>
+                                            <option value="Kwale"></option>
+                                            <option value="Laikipia"></option>
+                                            <option value="Lamu"></option>
+                                            <option value="Machakos"></option>
+                                            <option value="Makueni"></option>
+                                            <option value="Mandera"></option>
+                                            <option value="Marsabit"></option>
+                                            <option value="Meru"></option>
+                                            <option value="Migori"></option>
+                                            <option value="Mombasa"></option>
+                                            <option value="Murang'a"></option>
+                                            <option value="Nairobi"></option>
+                                            <option value="Nakuru"></option>
+                                            <option value="Nandi"></option>
+                                            <option value="Narok"></option>
+                                            <option value="Nyamira"></option>
+                                            <option value="Nyandarua"></option>
+                                            <option value="Nyeri"></option>
+                                            <option value="Samburu"></option>
+                                            <option value="Siaya"></option>
+                                            <option value="Taita-Taveta"></option>
+                                            <option value="Tana River"></option>
+                                            <option value="Tharaka-Nithi"></option>
+                                            <option value="Trans Nzoia"></option>
+                                            <option value="Turkana"></option>
+                                            <option value="Uasin Gishu"></option>
+                                            <option value="Vihiga"></option>
+                                            <option value="Wajir"></option>
+                                            <option value="West Pokot"></option>
+                                        </datalist>
+                                <div class="input-icon"><i class="fa fa-tel"></i></div>
+                              </div>
+
                               <div class="col-half">
-                                <h4>Date of Birth</h4>
+                                <h5>Date of birth</h5>
                                 <div class="input-group">
                                   <div class="col-third">
                                     <input type="number" placeholder="DD" name="day-of-birth" required="" min="1" max="31" />
@@ -181,7 +190,7 @@
                               </div>
 
                               <div class="col-half">
-                                <h4>Gender</h4>
+                                <h5>Gender</h5>
                                 <div class="input-group">
                                   <input type="radio" name="gender" value="male" id="gender-male" required="" />
                                   <label for="gender-male">Male</label>
@@ -191,37 +200,93 @@
                               </div>
                             </div>
 
+                            <!-- Education background -->
+                            <div class="row">
+                              <h4>Education background</h4>
+                                <div class="col-half">
+                                  <h5>KCSE Grade</h5>
+                                  <div class="">
+                                    <div class="">
+                                        <select>
+                                            <option value="A">A</option>
+                                            <option value="A-">A-</option>
+                                            <option value="B+">B+</option>
+                                            <option value="B">B</option>
+                                            <option value="B-">B-</option>
+                                            <option value="C+">C+</option>
+                                            <option value="C">C</option>
+                                            <option value="C-">C-</option>
+                                            <option value="D+">D+</option>
+                                            <option value="D">D</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-half">
+                                    <h5>Year of Exams</h5>
+                                    <div class="">
+                                    <div class="">
+                                        <select>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2000">2000</option>
+                                            <option value="1999">1999</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1990">1990</option>
+                                            <option value="1989">1989</option>
+                                            <option value="1988">1988</option>
+                                            <option value="1987">1987</option>
+                                            <option value="1986">1986</option>
+                                            <option value="1985">1985</option>
+                                            <option value="1984">1984</option>
+                                            <option value="1983">1983</option>
+                                            <option value="1982">1982</option>
+                                            <option value="1981">1981</option>
+                                            <option value="1980">1980</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                            </div>
+                                <h5>Brief explanation about your education background</h5>
+                                <div class="input-group input-group-icon" style="width: 65%;">
+                                    <textarea cols="" rows="5" placeholder="Short about your education"></textarea>
+                              </div>
+
+                            </div>
+
+                            <!-- //Education background -->
+
                             <div class="row">
                               <h4>Payment Details</h4>
-                              <div class="input-group">
-                                <input type="radio" name="payment-method" value="card" id="payment-method-card" checked="true"/>
-                                <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
-                                <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal"/>
-                                <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
-                              </div>
-                              <div class="input-group input-group-icon">
-                                <input type="text" placeholder="Card Number"/>
-                                <div class="input-icon"><i class="fa fa-credit-card"></i></div>
-                              </div>
-                              <div class="col-half">
-                                <div class="input-group input-group-icon">
-                                  <input type="text" placeholder="Card CVC"/>
-                                  <div class="input-icon"><i class="fa fa-user"></i></div>
-                                </div>
-                              </div>
-                              <div class="col-half">
-                                <div class="input-group">
-                                  <select>
-                                    <option>01 Jan</option>
-                                    <option>02 Jan</option>
-                                  </select>
-                                  <select>
-                                    <option>2015</option>
-                                    <option>2016</option>
-                                  </select>
-                                </div>
+                              <h5>Please Enter Transaction Code. The code you receive after Paying Registration Fees</h5>
+                                <div class="input-group input-group-icon" style="width: 65%;">
+                                    <input type="text" placeholder="eg. LIR1EVIXIY" name="mpesa" required="required" minlength="10" maxlength="10" />
+                                    <div class="input-icon"><i class="fa fa-user"></i></div>
                               </div>
                             </div>
+
                             <div class="row">
                               <h4>Terms and Conditions</h4>
                               <div class="input-group">
