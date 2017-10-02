@@ -112,8 +112,52 @@
                               <div class="input-group input-group-icon" style="width: 65%;">
                                 <input list="county" name="county" placeholder="County" />
                                 <datalist id="county">
-                                    <option value="Mombasa"></option>
+                                    <option value="Baringo"></option>
+                                    <option value="Bomet"></option>
+                                    <option value="Busia"></option>
+                                    <option value="Elgeyo-Marakwet"></option>
+                                    <option value="Embu"></option>
+                                    <option value="Garisa"></option>
+                                    <option value="Homa Bay"></option>
+                                    <option value="Isiolo"></option>
+                                    <option value="Kajiado"></option>
+                                    <option value="Kakamega"></option>
+                                    <option value="Kericho"></option>
+                                    <option value="Kiambu"></option>
+                                    <option value="Kilifi"></option>
+                                    <option value="Kirinyaga"></option>
+                                    <option value="Kisii"></option>
                                     <option value="Kisumu"></option>
+                                    <option value="Kitui"></option>
+                                    <option value="Kwale"></option>
+                                    <option value="Laikipia"></option>
+                                    <option value="Lamu"></option>
+                                    <option value="Machakos"></option>
+                                    <option value="Makueni"></option>
+                                    <option value="Mandera"></option>
+                                    <option value="Marsabit"></option>
+                                    <option value="Meru"></option>
+                                    <option value="Migori"></option>
+                                    <option value="Mombasa"></option>
+                                    <option value="Murang'a"></option>
+                                    <option value="Nairobi"></option>
+                                    <option value="Nakuru"></option>
+                                    <option value="Nandi"></option>
+                                    <option value="Narok"></option>
+                                    <option value="Nyamira"></option>
+                                    <option value="Nyandarua"></option>
+                                    <option value="Nyeri"></option>
+                                    <option value="Samburu"></option>
+                                    <option value="Siaya"></option>
+                                    <option value="Taita-Taveta"></option>
+                                    <option value="Tana River"></option>
+                                    <option value="Tharaka-Nithi"></option>
+                                    <option value="Trans Nzoia"></option>
+                                    <option value="Turkana"></option>
+                                    <option value="Uasin Gishu"></option>
+                                    <option value="Vihiga"></option>
+                                    <option value="Wajir"></option>
+                                    <option value="West Pokot"></option>
                                 </datalist>
                                 <div class="input-icon"><i class="fa fa-tel"></i></div>
                               </div>
