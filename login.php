@@ -109,7 +109,7 @@
 
                               <div class="input-group input-group-icon" style="width: 65%;">
                                 <input type="text" placeholder="Phone Number" name="phone" required />
-                                <div class="input-icon"><i class="fa fa-tel"></i></div>
+                                <div class="input-icon"><i class="fa fa-mobile fa-1x"></i></div>
                               </div>
                             </div>
 
@@ -118,7 +118,7 @@
 
                                 <div class="input-group input-group-icon" style="width: 65%;">
                                     <input type="text" placeholder="ID number" name="id-number" maxlength="8" required="required" />
-                                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                                    <div class="input-icon"><i class="fa fa-id-card"></i></div>
                               </div>
 
                                 <div class="input-group input-group-icon" style="width: 65%;">
@@ -171,7 +171,7 @@
                                             <option value="Wajir"></option>
                                             <option value="West Pokot"></option>
                                         </datalist>
-                                <div class="input-icon"><i class="fa fa-tel"></i></div>
+                                <div class="input-icon"><i class="fa fa-map-marker fa-1x"></i></div>
                               </div>
 
                               <div class="col-half">
@@ -224,7 +224,7 @@
                                 </div>
 
                                 <div class="col-half">
-                                    <h5>Year of Exams</h5>
+                                    <h5>KCSE Year of Exams</h5>
                                     <div class="">
                                     <div class="">
                                         <select>
@@ -283,7 +283,7 @@
                               <h5>Please Enter Transaction Code. The code you receive after Paying Registration Fees</h5>
                                 <div class="input-group input-group-icon" style="width: 65%;">
                                     <input type="text" placeholder="eg. LIR1EVIXIY" name="mpesa" required="required" minlength="10" maxlength="10" />
-                                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                                    <div class="input-icon"><i class="fa fa-envelope-open fa-1x"></i></div>
                               </div>
                             </div>
 
