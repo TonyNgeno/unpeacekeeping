@@ -7,7 +7,7 @@ input,
 input[type="radio"] + label,
 input[type="checkbox"] + label:before,
 select option,
-select {
+select , textarea{
   width: 100%;
   padding: 1em;
   line-height: 1.4;
@@ -22,13 +22,13 @@ select {
 }
 input:focus {
   outline: 0;
-  border-color: #64ac15;
+  border-color: #005FA6;
 }
 input:focus + .input-icon i {
-  color: #7ed321;
+  color: #005FA6;
 }
 input:focus + .input-icon:after {
-  border-right-color: #7ed321;
+  border-right-color: #005FA6;
 }
 input[type="radio"] {
   display: none;
@@ -56,9 +56,9 @@ input[type="radio"]:checked + label,
 input:checked + label:before,
 select:focus,
 select:active {
-  background-color: #7ed321;
+  background-color: #005FA6;
   color: #fff;
-  border-color: #64ac15;
+  border-color: #005FA6;
 }
 input[type="checkbox"] {
   display: none;
@@ -108,7 +108,7 @@ select:active {
   outline: 0;
 }
 select option {
-  background-color: #7ed321;
+  background-color: #005FA6;
   color: #fff;
 }
 .input-group {
@@ -133,7 +133,7 @@ select option {
   position: absolute;
   top: 0;
   left: 0;
-  width: 3.4em;
+  width: 5em;
   height: 3.4em;
   line-height: 3.4em;
   text-align: center;
@@ -192,4 +192,10 @@ select option {
     width: 100%;
     padding-right: 0;
   }
+}
+.grade{
+  width: 50%;
+}
+.apply-btn{
+  float: left;
 }
