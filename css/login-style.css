@@ -30,6 +30,16 @@ input:focus + .input-icon i {
 input:focus + .input-icon:after {
   border-right-color: #005FA6;
 }
+textarea:focus{
+  outline: 0;
+  border-color: #005FA6;
+}
+textarea:focus + .input-icon i{
+  color: #005FA6;
+}
+textarea:focus + .input-icon:after{
+  border-right-color: #005FA6;
+}
 input[type="radio"] {
   display: none;
 }
