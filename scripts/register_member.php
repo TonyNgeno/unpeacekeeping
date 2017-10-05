@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Register- UN Peace Keeping - KE</title>
-
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta name="description" content="">
-	<meta name="author" content="Emmanuel Gathage & Brian Okinyi">
-	<meta name="keywords" content="un, United Nations, UN Peace Keeping, peace, Kenya, register">
-	<meta name="twitter:description" content="UN Peace Keeping Ke - Register">
-	<meta name="twitter:title" content="Register- UN Peace Keeping - KE">
-	<meta name="twitter:site" content="unpeacekeeping.co.ke">
-	<meta name="twitter:image" content="">
-	<meta name="twitter:creator" content="Emmanuel Gathage & Brian Okinyi">
-	<meta name="country" content="Kenya">
-
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="Register">
-	<meta property="og:description" content="Register as an Ambassador">
-	<meta property="og:url" content="unpeacekeeping.co.ke">
-	<meta property="og:site_name" content="unpeacekeeping.co.ke">
-	<meta property="og:image" content="../img/hero.jpg">
-
-	<meta property="article:publisher" content="Emmanuel & Brian">
-	<meta property="article:author" content="Emmanuel & Brian">
-	<meta property="article:section" content="Registration of Ambassadors">
-	<meta property="article:published_time" content="2017-10-16T09:00:53+00:00">
-	<meta property="article:modified_time" content="2017-10-16T09:00:53+00:00">
-	<meta property="article:updated_time" content="2017-10-16T09:00:53+00:00">
-
-	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-</head>
-<body>
-
-</body>
-</html>
 <?php
 	if(isset($_POST['registration_submit'])){
 		$name = $_POST['name'];
@@ -52,20 +14,6 @@
 		$education_desc = $_POST['education_desc'];
 		$MPESA_code = $_POST['mpesa'];
 		$terms = $_POST['terms'];
-
-		//Concatenate to date of birth
-		if(checkdate($mm, $dd, $yyyy) === TRUE){
-			$birthday = new DateTime($yyyy.'-'.$mm.'-'.$dd);
-			//Create a date string to store in database
-			$dob = date_format($birthday, 'Y-m-d');
-		}else{
-			?>
-				<script type="text/javascript">
-					window.alert("Oopps! The birthday you entered does not seem to be valid");
-				</script>
-			<?php
-			header("refresh:1;url=../register.php");
-		}			
 
 		//Check empty
 		if(empty($name)){
@@ -116,6 +64,30 @@
 			<?php
 			header("refresh:1;url=../register.php");
 		}
+		if(empty($dd)){
+			?>
+				<script type="text/javascript">
+					window.alert("Oopps! You didn't fill in your day of birth");
+				</script>
+			<?php
+			header("refresh:1;url=../register.php");
+		}
+		if(empty($mm)){
+			?>
+				<script type="text/javascript">
+					window.alert("Oopps! You didn't fill in your month of birth");
+				</script>
+			<?php
+			header("refresh:1;url=../register.php");
+		}
+		if(empty($yyyy)){
+			?>
+				<script type="text/javascript">
+					window.alert("Oopps! You didn't fill in your Year of Birth");
+				</script>
+			<?php
+			header("refresh:1;url=../register.php");
+		}
 		if(empty($gender)){
 			?>
 				<script type="text/javascript">
@@ -161,16 +133,6 @@
 			header("refresh:10;url=../index.html");
   		}
 
-  		//Filter and sanitize data
-  		if(!is_numeric($id_number)){
-			?>
-				<script type="text/javascript">
-					window.alert("Ooops! The ID Number you entered does not appear to be valid.");
-				</script>
-			<?php
-			header("refresh:10;url=../index.html");
-  		}
-
   		//Database parameters
   		$servername = "localhost";
   		$serveruser = "chiron";
@@ -181,10 +143,10 @@
   		$conn = new mysqli($servername, $serveruser, $serverpass, $dbname);
 
   		if($conn->connect_error){
-  			die("Error while connecting to database: ".$conn->connect_error);
+  			die("Error while connecting to databse: ".$conn->connect_error);
   		}
 
-  		$sql = "INSERT INTO member(name, email, phone_Number, id_Number, county, dob, gender, KCSE_grade, education_desc, MPESA_code, terms) VALUES ('$name', '$email', '$phone', '$id_number', '$county', '$dob', '$gender', '$KCSE_grade', '$education_desc', '$MPESA_code', '$terms')";
+  		$sql = "INSERT INTO member(name, email, phone_Number, id_Number, county, b_day, b_month, b_year, gender, KCSE_grade, education_desc, MPESA_code, terms) VALUES ('$name', '$email', '$phone', '$id_number', '$county', '$dd', '$mm', '$yyyy', '$gender', '$KCSE_grade', '$education_desc', '$MPESA_code', '$terms')";
 
   		if($conn->query($sql) === TRUE){
   			?>
@@ -211,9 +173,30 @@
   								";
 
   			//Calculate age of client
-  			$today = new DateTime();
+  			function calculate_age($birthday){
+  				$today = new DateTime();
+  				$diff = $today->diff(new DateTime($birthday));
 
-  			$age = $today->diff($birthday);
+  				if($diff->y){
+  					return '$diff->y'.' Years'.'$diff->m'.' Months';
+  				}elseif($diff->m){
+  					return '$diff->m'.' Months'.'$diff->d'." Months";
+  				}else{
+  					return '$diff->d'.' Days old';
+  				}
+  			}
+
+  			//Type cast ages
+  			$yyyy = (int)$yyyy;
+  			$mm = (int)$mm;
+  			$dd = (int)$dd;
+
+  			//Change their age to format
+  			$birthday = (new DateTime)->createFromFormat('Y-m-d','$yyyy-$mm-$dd');
+  			//Call Function
+  			$age = calculate_age($birthday);
+
+  			echo "$age";
 
   			$email_message .= "	Age: $age\n
   								Gender: $gender\n
